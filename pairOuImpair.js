@@ -19,18 +19,21 @@
 // Attention : gérez aussi les entiers négatifs.
 
 
-let numberToChoose = "-4";
+function numberToChoose (number){
 
-if (numberToChoose%2===0 && (isNaN(numberToChoose)===false) && numberToChoose.length !==0){
-  console.log("Ce chiffre est pair")
-} else if(numberToChoose%2!==0 && (isNaN(numberToChoose)===false) && numberToChoose.length !==0) {
-  console.log("Ce chiffre est impair")
-};
+  if (number%2===0 && (isNaN(number)===false) && number.length !==0){
+    console.log("Ce chiffre est pair")
+  } else if(number%2!==0 && (isNaN(number)===false) && number.length !==0) {
+    console.log("Ce chiffre est impair")
+  };
 
-if ((isNaN(numberToChoose))||numberToChoose===""){
-  console.log("Vous ne m'aurez pas !")
-};
+  if ((isNaN(number))||number===""){
+    console.log("Vous ne m'aurez pas !")
+  };
 
-if (numberToChoose<0){
-  console.log("Ce chiffre est négatif !");
+  if (number<0){
+    console.log("Ce chiffre est négatif !");
+  }
 }
+
+numberToChoose(-9);
