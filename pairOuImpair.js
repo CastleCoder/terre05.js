@@ -20,8 +20,9 @@
 
 
 function numberToChoose (number){
-
+  
   if (number%2===0 && (isNaN(number)===false) && number.length !==0){
+    let numberTrue = parseInt(number)
     console.log("Ce chiffre est pair")
   } else if(number%2!==0 && (isNaN(number)===false) && number.length !==0) {
     console.log("Ce chiffre est impair")
@@ -36,4 +37,5 @@ function numberToChoose (number){
   }
 }
 
-numberToChoose(-9);
+const args = process.argv.slice(2);
+numberToChoose(args[0]);
